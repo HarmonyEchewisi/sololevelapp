@@ -1,0 +1,46 @@
+name: sololevelapp
+description: "A Solo Leveling-inspired fitness app."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ✅ Firebase Dependencies
+  firebase_core: ^3.12.1
+  cloud_firestore: ^5.6.5
+  firebase_auth: ^5.5.1
+
+
+  # ✅ Google Sign-In for authentication
+  google_sign_in: ^6.2.3
+
+  # ✅ State Management
+  provider: ^6.0.0
+
+  # ✅ Animations
+  lottie: ^3.3.1
+
+  # ✅ Fonts
+  google_fonts: ^6.2.1
+
+  # ✅ Image Picker for Profile Picture Upload
+  image_picker: ^1.0.7  # ✅ Allows user to select an image
+
+  # ✅ Cached Network Image (For faster image loading)
+  cached_network_image: ^3.3.1  # ✅ Improves image performance
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/fonts/
+    - assets/data/
+    - assets/free_male_body_low_poly_fre.glb
+

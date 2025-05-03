@@ -1,0 +1,1 @@
+C:\Users\xioch\Desktop\sololevelapp\android\app\src\main\kotlin\com\example\sololevelapp\MainActivity.kt

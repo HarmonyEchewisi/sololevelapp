@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "913247627945",
+    "project_id": "sololevelapp-5f31b",
+    "storage_bucket": "sololevelapp-5f31b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913247627945:android:9e1a8a40eafdc2b69057b8",
+        "android_client_info": {
+          "package_name": "com.example.sololevelapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "913247627945-c3pllhf2dao6mjvpm94vagrldvc2o3al.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sololevelapp",
+            "certificate_hash": "77c38a96acf59c97223affad0f44f7728283c4dd"
+          }
+        },
+        {
+          "client_id": "913247627945-iimc6q3fmqu2d0nlanpbpb7fkblf52j0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5vQhf7Ny_5gLmQarJOhqp5vv_C9d3QwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "913247627945-iimc6q3fmqu2d0nlanpbpb7fkblf52j0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "913247627945-2t3qd6nis7dtmgjggtmh6c65tip3v1oo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.sololevelapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913247627945:android:8ffe31ab972b59ed9057b8",
+        "android_client_info": {
+          "package_name": "com.sololevel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "913247627945-ntdvnlssc7i4djrg0sv9va6296h8rtce.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sololevel",
+            "certificate_hash": "77c38a96acf59c97223affad0f44f7728283c4dd"
+          }
+        },
+        {
+          "client_id": "913247627945-iimc6q3fmqu2d0nlanpbpb7fkblf52j0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5vQhf7Ny_5gLmQarJOhqp5vv_C9d3QwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "913247627945-iimc6q3fmqu2d0nlanpbpb7fkblf52j0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "913247627945-2t3qd6nis7dtmgjggtmh6c65tip3v1oo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.sololevelapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
