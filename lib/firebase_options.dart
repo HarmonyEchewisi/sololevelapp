@@ -5,6 +5,7 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 /// Provides the default [FirebaseOptions] for each supported platform.
 ///
@@ -44,53 +45,53 @@ class DefaultFirebaseOptions {
   }
 
   /// Firebase configuration for Web platform.
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBJ2Ul18E-ZiOSysUIJhLfPxJE4NeTrEhs',
-    appId: '1:913247627945:web:321ba30b90a029439057b8',
-    messagingSenderId: '913247627945',
-    projectId: 'sololevelapp-5f31b',
-    authDomain: 'sololevelapp-5f31b.firebaseapp.com',
-    storageBucket: 'sololevelapp-5f31b.firebasestorage.app',
-    measurementId: 'G-Q1GEBDHVHX',
+  static final FirebaseOptions web = FirebaseOptions(
+    apiKey: dotenv.env['FIREBASE_API_KEY_WEB']!,
+    appId: dotenv.env['FIREBASE_APP_ID_WEB']!,
+    messagingSenderId: dotenv.env['FIREBASE_MESSAGING_SENDER_ID_WEB']!,
+    projectId: dotenv.env['FIREBASE_PROJECT_ID']!,
+    authDomain: dotenv.env['FIREBASE_AUTH_DOMAIN'],
+    storageBucket: dotenv.env['FIREBASE_STORAGE_BUCKET'],
+    measurementId: dotenv.env['FIREBASE_MEASUREMENT_ID_WEB'],
   );
 
   /// Firebase configuration for Android platform.
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB5vQhf7Ny_5gLmQarJOhqp5vv_C9d3QwI',
-    appId: '1:913247627945:android:9e1a8a40eafdc2b69057b8',
-    messagingSenderId: '913247627945',
-    projectId: 'sololevelapp-5f31b',
-    storageBucket: 'sololevelapp-5f31b.firebasestorage.app',
+  static final FirebaseOptions android = FirebaseOptions(
+    apiKey: dotenv.env['FIREBASE_API_KEY_ANDROID']!,
+    appId: dotenv.env['FIREBASE_APP_ID_ANDROID']!,
+    messagingSenderId: dotenv.env['FIREBASE_MESSAGING_SENDER_ID_WEB']!,
+    projectId: dotenv.env['FIREBASE_PROJECT_ID']!,
+    storageBucket: dotenv.env['FIREBASE_STORAGE_BUCKET'],
   );
 
   /// Firebase configuration for iOS platform.
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyA9649o_b9yvgNLNKltiDoBicINniwFa54',
-    appId: '1:913247627945:ios:1df324ad2f679e6e9057b8',
-    messagingSenderId: '913247627945',
-    projectId: 'sololevelapp-5f31b',
-    storageBucket: 'sololevelapp-5f31b.firebasestorage.app',
-    iosBundleId: 'com.example.sololevelapp',
+  static final FirebaseOptions ios = FirebaseOptions(
+    apiKey: dotenv.env['FIREBASE_API_KEY_IOS']!,
+    appId: dotenv.env['FIREBASE_APP_ID_IOS']!,
+    messagingSenderId: dotenv.env['FIREBASE_MESSAGING_SENDER_ID_WEB']!,
+    projectId: dotenv.env['FIREBASE_PROJECT_ID']!,
+    storageBucket: dotenv.env['FIREBASE_STORAGE_BUCKET'],
+    iosBundleId: dotenv.env['FIREBASE_IOS_BUNDLE_ID'],
   );
 
   /// Firebase configuration for macOS platform.
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyA9649o_b9yvgNLNKltiDoBicINniwFa54',
-    appId: '1:913247627945:ios:1df324ad2f679e6e9057b8',
-    messagingSenderId: '913247627945',
-    projectId: 'sololevelapp-5f31b',
-    storageBucket: 'sololevelapp-5f31b.firebasestorage.app',
-    iosBundleId: 'com.example.sololevelapp',
+  static final FirebaseOptions macos = FirebaseOptions(
+    apiKey: dotenv.env['FIREBASE_API_KEY_IOS']!,
+    appId: dotenv.env['FIREBASE_APP_ID_IOS']!,
+    messagingSenderId: dotenv.env['FIREBASE_MESSAGING_SENDER_ID_WEB']!,
+    projectId: dotenv.env['FIREBASE_PROJECT_ID']!,
+    storageBucket: dotenv.env['FIREBASE_STORAGE_BUCKET'],
+    iosBundleId: dotenv.env['FIREBASE_IOS_BUNDLE_ID'],
   );
 
   /// Firebase configuration for Windows platform.
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBJ2Ul18E-ZiOSysUIJhLfPxJE4NeTrEhs',
-    appId: '1:913247627945:web:e5e86f023b0736b59057b8',
-    messagingSenderId: '913247627945',
-    projectId: 'sololevelapp-5f31b',
-    authDomain: 'sololevelapp-5f31b.firebaseapp.com',
-    storageBucket: 'sololevelapp-5f31b.firebasestorage.app',
-    measurementId: 'G-7P1S06G4RZ',
+  static final FirebaseOptions windows = FirebaseOptions(
+    apiKey: dotenv.env['FIREBASE_API_KEY_WEB']!,
+    appId: dotenv.env['FIREBASE_APP_ID_WINDOWS']!,
+    messagingSenderId: dotenv.env['FIREBASE_MESSAGING_SENDER_ID_WEB']!,
+    projectId: dotenv.env['FIREBASE_PROJECT_ID']!,
+    authDomain: dotenv.env['FIREBASE_AUTH_DOMAIN'],
+    storageBucket: dotenv.env['FIREBASE_STORAGE_BUCKET'],
+    measurementId: dotenv.env['FIREBASE_MEASUREMENT_ID_WINDOWS'],
   );
 }
